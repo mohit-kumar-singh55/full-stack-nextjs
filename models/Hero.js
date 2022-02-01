@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const HeroSchema = new mongoose.Schema({
-    superhero: {
+    superHero: {
         type: String,
         required: [true, "Please name the super hero"],
         unique: true,
