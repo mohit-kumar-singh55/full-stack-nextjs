@@ -17,7 +17,7 @@ export default function Index({ heros }) {
                 Reveal Identity
               </MDBCardText>
               <Link href={`/${hero._id}`} passHref><MDBBtn className='mx-2'>View hero</MDBBtn></Link>
-              <Link href="/" passHref><MDBBtn className='mx-2'>Edit hero</MDBBtn></Link>
+              <Link href={`/${hero._id}/edit`} passHref><MDBBtn className='mx-2'>Edit hero</MDBBtn></Link>
             </MDBCardBody>
           </MDBCard>
         ))}
