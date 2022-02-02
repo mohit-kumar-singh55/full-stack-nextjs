@@ -9,14 +9,14 @@ export default function Index({ heros }) {
     <div className="container">
       <h1 className='display-2'>Superhero Identity Manager</h1>
       <div>
-        {heros.map((hero) => (
+        {heros && heros.map((hero) => (
           <MDBCard style={{ maxWidth: '22rem' }} className="my-2" key={hero.superHero}>
             <MDBCardBody>
               <MDBCardTitle>{hero.superHero}</MDBCardTitle>
               <MDBCardText>
                 Reveal Identity
               </MDBCardText>
-              <Link href="/" passHref><MDBBtn className='mx-2'>View hero</MDBBtn></Link>
+              <Link href={`/${hero._id}`} passHref><MDBBtn className='mx-2'>View hero</MDBBtn></Link>
               <Link href="/" passHref><MDBBtn className='mx-2'>Edit hero</MDBBtn></Link>
             </MDBCardBody>
           </MDBCard>

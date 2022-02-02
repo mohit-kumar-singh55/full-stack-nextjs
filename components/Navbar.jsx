@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <nav className='navbar container'>
             <Link className="navbar-brand" href="/">Superhero Identity</Link>
-            <Link className="navbar-brand" href="/new" passHref><MDBBtn>New Identity</MDBBtn></Link>
+            <Link className="navbar-brand" href="/add" passHref><MDBBtn>New Identity</MDBBtn></Link>
         </nav>
     );
 }
